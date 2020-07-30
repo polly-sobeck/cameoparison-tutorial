@@ -58,7 +58,7 @@
 
 <div class="game-container">
     {#if done}
-        <div>
+        <div class="done">
             <strong>{score}/{results.length}</strong>
             <p>{pick_message(score / results.length)}</p>
             <button on:click={() => dispatch('restart')}>Back to main screen</button>
@@ -70,6 +70,8 @@
                     <Card 
                         celeb={a}
                         on:select={() => submit(a, b, 1)}
+                        showprice={!!last_result}
+                        winner={a.price >= b.price}
                     />
                 </div>
 
@@ -83,6 +85,8 @@
                     <Card
                         celeb={b}
                         on:select={() => submit(a, b, -1)}
+                        showprice={!!last_result}
+                        winner={b.price >= a.price}
                     />     
                 </div>
             </div>
@@ -168,6 +172,23 @@
         left: 0;
         top: 0;
     } 
+
+    .done {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .done strong {
+        font-size: 6em;
+        font-weight: 700;
+    }
 
     @media (min-width: 640px) {
         .game {
