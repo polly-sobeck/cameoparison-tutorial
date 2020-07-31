@@ -736,7 +736,7 @@ var app = (function () {
     			button = element("button");
     			t = text(t_value);
     			button.disabled = /*selected*/ ctx[0];
-    			attr_dev(button, "class", "svelte-1vaxxxj");
+    			attr_dev(button, "class", "svelte-ct3nzl");
     			add_location(button, file, 40, 8, 1034);
     		},
     		m: function mount(target, anchor) {
@@ -825,20 +825,20 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(span, "class", "logo svelte-1fhxxll svelte-1vaxxxj");
+    			attr_dev(span, "class", "logo svelte-1fhxxll svelte-ct3nzl");
     			add_location(span, file, 26, 14, 654);
-    			attr_dev(h1, "class", "svelte-1vaxxxj");
+    			attr_dev(h1, "class", "svelte-ct3nzl");
     			add_location(h1, file, 25, 4, 635);
     			attr_dev(a, "href", "https://cameo.com");
     			add_location(a, file, 30, 11, 733);
-    			attr_dev(p0, "class", "svelte-1vaxxxj");
+    			attr_dev(p0, "class", "svelte-ct3nzl");
     			add_location(p0, file, 29, 4, 718);
-    			attr_dev(p1, "class", "svelte-1vaxxxj");
+    			attr_dev(p1, "class", "svelte-ct3nzl");
     			add_location(p1, file, 33, 4, 871);
     			add_location(header, file, 24, 0, 622);
-    			attr_dev(p2, "class", "svelte-1vaxxxj");
+    			attr_dev(p2, "class", "svelte-ct3nzl");
     			add_location(p2, file, 36, 0, 925);
-    			attr_dev(div, "class", "categories svelte-1vaxxxj");
+    			attr_dev(div, "class", "categories svelte-ct3nzl");
     			add_location(div, file, 38, 0, 965);
     		},
     		l: function claim(nodes) {
